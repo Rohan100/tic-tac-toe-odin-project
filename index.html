@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="first-page" id="firstPage">
+        <form>
+            <h1 style="font-family: 'Courier New', monospace;font-weight: bolder;">Tic tac toe</h1>
+            <input id="name1" placeholder="First Player Name" />
+            <input id="name2" placeholder="Second Player Name" />
+            <button type="button" id="startButton">Start Game</button>
+        </form>
+    </div>
+
+    <div class="game" id="game">
+
+        <div class="userguid">
+            <h3>First Player : O</h3>
+            <h3>second Player : X</h3>
+        </div>
+        <div class="container">
+            <div class="board circle" id="board">
+                <div class="cell " data-cell></div>
+                <div class="cell " data-cell></div>
+                <div class="cell " data-cell></div>
+                <div class="cell " data-cell></div>
+                <div class="cell " data-cell></div>
+                <div class="cell " data-cell></div>
+                <div class="cell " data-cell></div>
+                <div class="cell " data-cell></div>
+                <div class="cell " data-cell></div>
+            </div>
+        </div>
+    </div>
+        <div class="winning-message" id="winningMessage">
+            <p id="winnerName"></p>
+            <button id="restartButton">Restart</button>
+        </div>
+        <script src="script.js"></script>
+</body>
+
+</html>
